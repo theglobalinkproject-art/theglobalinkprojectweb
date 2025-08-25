@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<body id="contact-page">
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Contact Us - The Global Ink Project Literary</title>
+
+      <!-- Google Fonts -->
+      <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Parisienne&display=swap"
+        rel="stylesheet"
+      />
+
+      <!-- Link to CSS -->
+      <link rel="stylesheet" href="style.css" />
+      <body class="contact-page">
+
+
+      <style>
+        body {
+          background-color: #f9f7f4;
+          margin: 0;
+          min-height: 100vh;
+          display: flex;
+          flex-direction: column;
+        }
+
+        /* Centering Contact Container */
+        .contact-container {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 50px;
+        }
+
+        .contact-form-wrapper {
+          background-color: #fff;
+          border-radius: 12px;
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+          padding: 50px;
+          max-width: 800px;
+          width: 100%;
+        }
+
+        .contact-form h2 {
+          font-family: "Parisienne", cursive;
+          font-size: 48px;
+          text-align: center;
+          margin-bottom: 30px;
+        }
+
+        .contact-form label {
+          display: block;
+          margin-top: 15px;
+          font-weight: bold;
+          font-family: "Montserrat", sans-serif;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+          width: 100%;
+          padding: 12px;
+          margin-top: 5px;
+          border-radius: 8px;
+          border: 1px solid #ccc;
+          font-family: inherit;
+          font-size: 16px;
+        }
+
+        .contact-form textarea {
+          height: 150px;
+          resize: vertical;
+        }
+
+        .contact-form button {
+          margin-top: 20px;
+          padding: 12px 30px;
+          background-color: #3b82f6;
+          color: white;
+          border: none;
+          border-radius: 8px;
+          cursor: pointer;
+          font-size: 16px;
+          font-family: "Montserrat", sans-serif;
+        }
+
+        .contact-form button:hover {
+          background-color: #2563eb;
+        }
+
+        footer {
+          background-color: #083d77;
+          color: white;
+          text-align: center;
+          padding: 15px 0;
+          font-family: "Montserrat", sans-serif;
+          margin-top: auto;
+        }
+      </style>
+    </head>
+    <body>
+      <!-- Navbar -->
+      <header class="modern-navbar">
+        <div class="nav-left">
+          <img src="/public/logo.png" alt="The Global Ink Project logo" class="logo" />
+          <h1 class="site-title">The Global Ink Literary</h1>
+        </div>
+
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="issue.html">Issue</a>
+          <a href="submissions.html">Submissions</a>
+          <a href="contactus.html">Contact</a>
+          <a href="submissions.html" class="nav-button">Submit</a>
+        </nav>
+      </header>
+
+      
+    
+
+      <div class="contact-container">
+        <div class="contact-form-wrapper">
+          <div class="contact-form">
+            <!-- Logo space -->
+            <div class="contact-logo">
+              <img src="/public/logo.png" alt="The Global Ink Project Logo" />
+            </div>
+
+            <h2>Contact Us</h2>
+            <p class="contact-caption">We’d love to hear from you! Whether you have questions about submissions, want to learn more about our journal, or are interested in collaborating, reach out to us. Fill out the form below or email us directly, and we’ll get back to you as soon as possible.</p>
+
+            <form action="https://formspree.io/f/mqaljjda" method="POST">
+              <!-- Topic box -->
+              <label for="topic">Topic</label>
+              <input
+                type="text"
+                id="topic"
+                name="topic"
+                placeholder="Subject of your message"
+              />
+
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your full name"
+                required
+              />
+
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="_replyto"
+                placeholder="Your email address"
+                required
+              />
+
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Your question"
+                required
+              ></textarea>
+
+              <input
+                type="hidden"
+                name="_subject"
+                value="New message from The Global Ink Project Contact Form"
+              />
+
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Footer -->
+      <footer>
+        <p>&copy; 2025 The Global Ink Project</p>
+      </footer>
+    </body>
+  </html>
+</body>

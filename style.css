@@ -1,0 +1,1312 @@
+/* Homepage background */
+.home-page {
+  background: #f8fafc; /* or your gradient */
+}
+
+/* Submissions page background */
+.submissions-page {
+  background: url("submissions-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Contact page background */
+.contact-page {
+  background: #f8fafc;
+}
+
+/* Issue page background */
+.issue-page {
+  background: url("issue-background.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #003366;
+  color: white;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 15px;
+}
+
+.site-title {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 150px 20px;
+  background: url("/public/Screenshot\ 2025-07-31\ 153102.png") center/cover
+    no-repeat;
+  color: #fafafa;
+}
+
+.hero-title {
+  font-family: "Parisienne", cursive;
+  font-size: 90px;
+  line-height: 1.1;
+  margin-bottom: 90px;
+  margin-top: 45px;
+  color: #1d2f59;
+  text-shadow: 2px 2px 6px rgb(0, 0, 0, 0.5);
+}
+
+.hero h2 {
+  font-size: 22px;
+  margin: 0 auto 40px auto;
+  color: #344065;
+  max-width: 800px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.button {
+  background-color: #2c3e50;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: #366d55;
+}
+
+/* Who Are We Section */
+.mission {
+  background: url("/public/19e2bac0f0a8cfd40418e3bd7aafa8b450c9fe48.webp")
+    center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0; /* removes gaps */
+  padding: 60px 0; /* no extra white space */
+}
+
+.mission .bubble {
+  width: 500px; /* wider bubble */
+  min-height: 380px; /* taller bubble base */
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 50%; /* starts as a circle, grows to oval if needed */
+  padding: 50px; /* bigger padding so text isn’t hugging edges */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+  overflow-wrap: break-word;
+}
+
+.mission .bubble h2 {
+  color: #003366;
+  font-size: 34px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 6px rgb(0, 0, 0, 0.5);
+}
+
+.mission .bubble p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* Instagram / Follow Us */
+.follow-us {
+  background-color: #f2f2f2;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 5px;
+  border-top: 2px solid #ddd;
+  background: url("/public/Screenshot\ 2025-07-31\ 153102.png") center/cover
+    no-repeat;
+}
+
+.follow-us h2 {
+  font-size: 28px;
+  color: #10224c;
+  margin-bottom: 10px;
+}
+
+.follow-us p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 16px;
+}
+
+/* =======================
+   ANIMATIONS
+======================= */
+
+/* Keyframes for fade-in-up */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hero animation */
+.hero-title {
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+.hero h2 {
+  opacity: 0;
+  animation: fadeInUp 1.2s ease forwards;
+  animation-delay: 0.3s;
+}
+
+/* Button animation */
+.hero .button {
+  opacity: 0;
+  animation: fadeInUp 1.2s ease forwards;
+  animation-delay: 0.6s;
+}
+
+/* Who Are We bubble animation (when visible) */
+
+.bubble.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bubble {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1.2s ease forwards;
+  animation-delay: 0.4s; /* small delay after hero */
+}
+
+/* General Reset */
+body {
+  margin: 0;
+  font-family: "Montesserant", cursive;
+  background-color: #ffffff;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #003366;
+  color: white;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.site-title {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.issue-page {
+  background: url("issue-background.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.issue-hero {
+  text-align: center;
+  background: url("") center/cover no-repeat;
+  padding: 2cm 20px;
+}
+
+.issue-hero h1 {
+  font-size: 40px;
+  font-family: "Parisienne", cursive;
+  margin-bottom: 10px;
+  color: #132a5e;
+}
+
+.issue-hero h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #0c2c55;
+}
+
+.issue-hero .subtitle {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #003366;
+  color: #ffffff;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #1d4d36;
+}
+
+.literature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-content: center;
+  max-width: 1200px; /* content width, not the bubble width */
+  margin: 0 auto; /* center inside the bubble */
+  background: none; /* remove grey from here */
+  border-radius: 0;
+}
+
+.grey-bubble {
+  background: #e0e0e0; /* Grey background */
+  border-radius: 30px; /* Makes the corners rounded */
+  max-width: 1400px; /* Controls how wide it is */
+  margin: 40px auto; /* Centers it and adds space above/below */
+  padding: 10px 40px; /* Controls the space inside the bubble */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+/* Card */
+.literature-card {
+  background: #e0e0e0;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.literature-card:hover {
+  transform: translateY(-5px);
+}
+
+.literature-card .card-bottom p {
+  margin-bottom: 15px; /* space between description and tags */
+}
+
+.literature-card .tags {
+  display: flex;
+  gap: 10px; /* space between individual tags */
+}
+
+/* Header with circle image */
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.author-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.header-text .title {
+  font-size: 18px;
+  color: #102941;
+  margin: 0;
+}
+
+.header-text .author {
+  font-size: 14px;
+  color: #666;
+  margin: 2px 0 0;
+}
+
+/* Body */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.description {
+  font-size: 14px;
+  color: #444;
+}
+
+.literature-card {
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+.literature-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+.grey-bubble {
+  position: relative;
+}
+.grey-bubble::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 100%;
+  background: radial-gradient(
+    circle at top,
+    rgba(255, 255, 255, 0.6),
+    transparent 70%
+  );
+  z-index: -1;
+}
+
+/* Category Button */
+.category {
+  align-self: center;
+  padding: 6px 20px;
+  background-color: #002142;
+  color: white;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: auto;
+}
+
+.issue-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Wider min width */
+  gap: 40px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.literature-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 20px;
+
+  /* Glassmorphism */
+  background: rgba(0, 51, 102, 0.35); /* transparent blue */
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border: 1px solid rgb(255, 255, 255, 0.25);
+
+  /* Shadow & hover */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Top section */
+.card-top {
+  background: linear-gradient(135deg, #ffb347, #ffcc33);
+  color: white;
+  padding: 90px;
+  text-align: left;
+  position: relative;
+}
+
+.card-top .badge {
+  background: #eaffd0;
+  color: #333;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.card-top .title {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 40px 0 10px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.author img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+/* Cover Image Section */
+.card-image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Bottom Section */
+.card-top,
+.card-bottom {
+  background: transparent; /* Remove solid white */
+  padding: 10px;
+}
+
+.description {
+  color: white; /* Better contrast on blue glass */
+}
+
+.tags span {
+  display: inline-block;
+  padding: 6px 16px; /* Creates pill shape */
+  background: #f2f2f2; /* Light background */
+  color: #555; /* Text color */
+  border-radius: 30px; /* Rounded pill edges */
+  font-size: 13px; /* Slightly larger for button look */
+  font-weight: 500;
+  cursor: pointer; /* Cursor like a button */
+  transition: background 0.3s;
+}
+
+.tags span:hover {
+  background: #e0e0e0; /* Slight hover effect */
+}
+
+/* =========================
+   Editor & Mission Section
+========================= */
+
+/* Full-width dark navy background */
+.editor-section {
+  background-color: #13304e; /* Same as footer */
+  padding: 100px 0; /* Top & bottom space */
+  margin-top: 120px;
+}
+
+/* Flex container for the two cards */
+.editor-mission {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 40px; /* Side padding */
+}
+
+/* Frosted glass cards */
+.editor-mission div {
+  flex: 1;
+  padding: 40px;
+  background: rgb(255, 255, 255, 0.12); /* Transparent white overlay */
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Heading & text */
+.editor-mission h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: white;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.editor-mission p {
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+/* Optional shimmer effect for glass */
+.editor-mission div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  animation: shimmerMove 8s linear infinite;
+}
+
+@keyframes shimmerMove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+/* =========================
+   SUBMISSIONS PAGE
+========================= */
+
+/* Hero Section */
+.submissions-hero {
+  position: relative;
+  text-align: center;
+  padding: 120px 20px 80px;
+  background: url("/public/apply-here.png") center/cover no-repeat;
+  color: #ffffff;
+}
+.submissions-hero {
+  text-align: center;
+  padding: 90px 20px;
+  background: linear-gradient(270deg, #c6dbd1, #c5d6e2, #b2cebf);
+  background-size: 600% 600%;
+  color: #ffffff;
+  border-radius: 20px; /* optional rounded edges */
+  animation: gradientMove 12s ease infinite;
+}
+
+/* Put keyframes OUTSIDE of any selector */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.submissions-hero::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: url("/public/applymaybe.png");
+}
+
+.submissions-hero h1,
+.submissions-hero .button {
+  position: relative; /* ensures they appear above the overlay */
+}
+
+.submissions-hero h1 {
+  font-family: "Parisienne", cursive;
+  font-size: 55px;
+  margin-bottom: 10px;
+  color: #003366;
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+.submissions-hero h2 {
+  font-size: 20px;
+  margin: 0 auto 40px auto;
+  color: #344065;
+  max-width: 800px;
+  text-shadow: 1px 1px 4px rgba(27, 52, 83, 0.5);
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+.submissions-hero .button {
+  display: inline-block;
+  padding: 14px 40px;
+  background-color: #003366;
+  color: white;
+  border-radius: 35px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.submissions-hero .button:hover {
+  background-color: #154c37;
+  transform: scale(1.05);
+}
+
+/* Requirements Section */
+.submission-requirements {
+  max-width: none;
+  margin: 20px auto;
+  padding: 30px 60px;
+  text-align: left;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+}
+
+.submission-requirements h2 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #0e365d;
+}
+
+/* Add spacing above and below horizontal rules */
+hr {
+  margin: 30px 0; /* 30px top and bottom */
+  border: none;
+  border-top: 2px solid #003366; /* optional style */
+}
+
+/* Add spacing for submission text */
+.submission-text,
+.submission-requirements {
+  margin-bottom: 20px; /* space between paragraphs and lines */
+  line-height: 1.6; /* makes text more readable */
+}
+
+/* Flex container for side-by-side layout */
+.submission-container {
+  display: flex;
+  gap: 60px; /* space between sections */
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1800px; /* bigger container so boxes can be wider */
+  margin: 0 auto;
+  padding: 60px 90px;
+}
+
+/* Make each section flexible */
+.submission-requirements,
+.timeline {
+  flex: 1 1 70%; /* each takes 48% of container width */
+  max-width: 900px; /* ensures they stay side by side */
+  box-sizing: border-box; /* include padding in width */
+}
+
+/* Responsive: stack vertically on smaller screens */
+@media screen and (max-width: 900px) {
+  .submission-requirements,
+  .timeline {
+    flex: 1 1 100%; /* stack full width */
+    max-width: 100%;
+  }
+
+  .submission-requirements,
+  .timeline {
+    flex: 1 1 45%; /* each box takes ~45% of container width */
+    min-width: 500px; /* prevents boxes from getting too narrow */
+    box-sizing: border-box;
+  }
+}
+
+/* =========================
+   TIMELINE
+========================= */
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 0;
+  padding: 40px 0;
+}
+
+/* Center vertical line */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #003366;
+  top: 40px; /* Adjusts top start */
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0; /* Keep it behind content */
+}
+
+/* Timeline event container */
+.timeline-container {
+  padding: 20px 40px;
+  position: relative;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+/* Timeline dots */
+.timeline-container::before {
+  content: " ";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 25px;
+  background-color: white;
+  border: 4px solid #003366;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Left side events */
+.left {
+  left: 0;
+  text-align: right;
+}
+
+.left::before {
+  right: -12px;
+}
+
+/* Right side events */
+.right {
+  left: 50%;
+}
+
+.right::before {
+  left: -12px;
+}
+
+/* Event content box */
+.timeline-container .content {
+  padding: 20px 30px;
+  background-color: #f9f9f9;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease forwards;
+}
+
+.timeline-container .content h3 {
+  margin: 0;
+  color: #043362;
+  font-size: 19px;
+}
+
+.timeline-container .content p {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #555;
+}
+
+.timeline h2 {
+  text-align: center; /* centers the text horizontally */
+  font-size: 31px;
+  color: #003366;
+  font-weight: bold;
+  margin-top: -70px; /* remove extra space above */
+  margin-bottom: 2rem; /* space between title and line */
+  position: relative;
+  z-index: 2; /* ensures title sits above the line */
+  display: block;
+  width: 100%
+  background-color: white; /* optional, cuts the line behind title */
+  padding: 0 10px;
+}
+
+
+.timeline-container:last-child {
+  margin-bottom: -50; /* remove extra space after last dot */
+}
+
+
+
+
+
+/* =========================
+   ANIMATIONS
+========================= */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.timeline-container::before {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 51, 102, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(0, 51, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 51, 102, 0);
+  }
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* -------------------- General Reset -------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: url("/public/apply.png"); /* light soft background */
+  color: #333;
+}
+
+/* -------------------- Modern Rounded Navbar -------------------- */
+.modern-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 15px 30px;
+  margin: 20px auto;
+  max-width: 1200px;
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 20px;
+  z-index: 1000;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.site-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #16366a; /* purple like reflection */
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #22395d;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #184e32; /* purple hover */
+}
+
+.nav-button {
+  background: #15422e; /* purple button */
+  color: #ffffff !important;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.nav-button:hover {
+  background: #0d3263; /* slightly darker purple */
+}
+
+/* -------------------- Hero Section -------------------- */
+/* -------------------- Hero Section -------------------- */
+.hero {
+  text-align: center;
+  padding: 120px 20px 100px;
+  color: white;
+}
+
+.hero-title {
+  font-family: "Parisienne", cursive;
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  font-size: 20px;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.button {
+  display: inline-block;
+  background: #11314f;
+  color: #ffffff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: #0b4119;
+}
+
+/* -------------------- Mission Section -------------------- */
+.mission {
+  display: flex;
+  justify-content: center;
+  padding: 80px 20px;
+}
+
+.bubble {
+  background: white;
+  border-radius: 30px;
+  padding: 40px 60px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  max-width: 800px;
+  text-align: center;
+}
+
+/* -------------------- Instagram Section -------------------- */
+.follow-us {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.follow-us h2 {
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+/* -------------------- Footer -------------------- */
+footer {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 60px;
+}
+
+/* Bubble wrapper - full width */
+.contact-form-wrapper {
+  background-color: #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 60px 100px;
+  width: 100vw; /* full viewport width */
+  max-width: 100vw; /* no restriction */
+  margin: 50px 0; /* vertical spacing only */
+  box-sizing: border-box;
+  position: relative; /* ensures proper layout */
+  left: 0; /* align with viewport start */
+}
+
+/* Form inside bubble */
+#contact {
+  width: 100%; /* fill wrapper */
+  max-width: none; /* remove any previous max-width */
+  margin: 0 auto;
+  padding: 0;
+  text-align: left;
+  font-family: "Georgia", serif;
+}
+
+/* Headings and labels */
+#contact h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 25px;
+}
+
+#contact label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+#contact textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+#contact button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: #284471;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#contact button:hover {
+  background-color: #356947;
+}
+
+/* Logo */
+.contact-logo {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contact-logo img {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Caption */
+.contact-caption {
+  text-align: center;
+  font-size: 2px;
+  color: #555;
+  font-family: "Montserrat", sans-serif;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+/* Full-width bubble */
+.contact-form-wrapper {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 60px 100px; /* top/bottom 60px, left/right 100px */
+  width: 100vw;
+  max-width: 100vw;
+  margin: 50px 0;
+  margin-top: 20px;
+  box-sizing: border-box;
+  position: relative;
+  left: 0;
+}
+
+/* Contact container */
+#contact {
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  font-family: "Georgia", serif;
+}
+
+/* Logo */
+.contact-logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-logo img {
+  max-width: 150px;
+  height: auto;
+}
+
+/* Heading */
+#contact h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+/* Caption */
+.contact-caption {
+  font-size: 18px;
+  color: #555;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 30px;
+}
+
+/* Contact info */
+.contact-info p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.contact-info a {
+  color: #58748D;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .contact-form-wrapper {
+    padding: 40px 20px;
+    width: 95vw;
+    max-width: 95vw;
+  }
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .contact-form-wrapper {
+    padding: 40px 20px; /* reduce padding on smaller screens */
+    width: 95vw;
+    max-width: 95vw;
+  }
+}
+/* Only for Contact Page */
+#contact-page {
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #d5d7e1, #c8cdd5, #e7eaee, #c5c9d3);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Contact Section Styling */
+#contact-us {
+  text-align: center;
+  margin: 60px 0;
+}
+
+#contact-us h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Make bubbles horizontal and floating near the top */
+.contact-bubbles {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  gap: 40px; /* space between bubbles */
+  margin-top: 0; /* move them higher on the page */
+  margin-bottom: -250px;
+  flex-wrap: nowrap; /* force horizontal layout */
+  position: relative; /* allows moving them up */
+}
+
+/* Square/Wide bubble styling */
+.bubble {
+  display: flex;
+  align-items: center;
+  flex-shrink: 1; /* allow shrinking */
+  justify-content: center;
+  width: 170px; /* wider bubble */
+  height: 60px; /* slightly rectangular */
+  background: linear-gradient(135deg, #16324e, #5e7a93ff);
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  flex-shrink: 0; /* prevents shrinking */
+}
+
+/* Hover effect */
+.bubble:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.bubble i {
+  pointer-events: none; /* makes the whole bubble clickable */
+}
+
+/* Responsive: shrink bubbles on small screens */
+@media (max-width: 600px) {
+  .contact-bubbles {
+    gap: 20px;
+    flex-wrap: wrap; /* allow wrapping if screen too narrow */
+  }
+
+  .bubble {
+    width: 20px;
+    height: 0px;
+    font-size: 2rem;
+  }
+}
