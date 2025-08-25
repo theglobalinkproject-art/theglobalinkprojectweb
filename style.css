@@ -61,8 +61,7 @@
 .hero {
   text-align: center;
   padding: 150px 20px;
-  background: url("/public/Screenshot\ 2025-07-31\ 153102.png") center/cover
-    no-repeat;
+  background: url("screenshot.png") center/cover no-repeat;
   color: #fafafa;
 }
 
@@ -101,7 +100,7 @@
 
 /* Who Are We Section */
 .mission {
-  background: url("/public/19e2bac0f0a8cfd40418e3bd7aafa8b450c9fe48.webp")
+  background: url("important.webp")
     center/cover no-repeat;
   display: flex;
   justify-content: center;
@@ -145,7 +144,7 @@
   text-align: center;
   margin-top: 5px;
   border-top: 2px solid #ddd;
-  background: url("/public/Screenshot\ 2025-07-31\ 153102.png") center/cover
+  background: url("screenshot.png") center/cover
     no-repeat;
 }
 
@@ -612,7 +611,7 @@ a {
   position: relative;
   text-align: center;
   padding: 120px 20px 80px;
-  background: url("/public/apply-here.png") center/cover no-repeat;
+  background: url("apply-here.png") center/cover no-repeat;
   color: #ffffff;
 }
 .submissions-hero {
@@ -645,7 +644,7 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: url("/public/applymaybe.png");
+  background-color: url("applymaybe.png");
 }
 
 .submissions-hero h1,
@@ -917,7 +916,7 @@ hr {
 
 body {
   font-family: "Montserrat", sans-serif;
-  background: url("/public/apply.png"); /* light soft background */
+  background: url("apply.png"); /* light soft background */
   color: #333;
 }
 
