@@ -16,7 +16,7 @@
 
 /* Issue page background */
 .issue-page {
-  background: url("public/apply.png") no-repeat center center fixed;
+  background: url("/theglobalinkprojectweb/public/apply.png") no-repeat center center fixed;
   background-size: cover;
 }
 
