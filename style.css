@@ -61,7 +61,7 @@
 .hero {
   text-align: center;
   padding: 150px 20px;
-  background: url("/screenshot.png") center/cover no-repeat;
+  background: url("public/screenshot.png") center/cover no-repeat;
   color: #fafafa;
 }
 
@@ -100,7 +100,7 @@
 
 /* Who Are We Section */
 .mission {
-  background: url("/important.webp")
+  background: url("public/important.webp")
     center/cover no-repeat;
   display: flex;
   justify-content: center;
@@ -144,7 +144,7 @@
   text-align: center;
   margin-top: 5px;
   border-top: 2px solid #ddd;
-  background: url("/screenshot.png") center/cover
+  background: url("public/screenshot.png") center/cover
     no-repeat;
 }
 
@@ -256,7 +256,7 @@ a {
 
 /* Hero Section */
 .issue-page {
-  background: url("/issue-background.jpg") no-repeat center center fixed;
+  background: url("public/issue-background.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
